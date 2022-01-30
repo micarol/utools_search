@@ -1,0 +1,17 @@
+{
+	"main": "index.html",
+	"preload": "preload.js",
+	"pluginName": "搜索",
+	"description": "Google Search",
+	"logo": "logo.jpg",
+	"platform": ["win32", "darwin"],
+	"auth":"micarol128@gmail.com",
+	"version":"1.0.0",
+	"features": [
+		{
+		  "code": "google",
+		  "explain": "Google it",
+			"cmds":["qs", "google", "搜索"]
+		}
+	]
+}

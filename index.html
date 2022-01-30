@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<!-- <input id="key" placeholder="搜索，回车打开浏览器查看结果。" width="1024" height="128" /> -->
+		<img src="bg.jpg">
+	</body>
+
+	<script>
+		function search() {
+			var k = document.getElementById("key").value;
+			gotoGoogle(k);			
+		}
+
+		// document.onkeyup = function(e) {
+		//   // 兼容FF和IE和Opera
+		//   var event = e || window.event;
+		//   var key = event.which || event.keyCode || event.charCode;
+		//   if (key == 13) {
+		//     search();
+		//   }
+		// };
+
+		function gotoGoogle(key) {
+			utools.ubrowser.goto('https://google.com/search?q='+key).run({ width: 1000, height: 600 });		  
+			// window.open("http://qq.com", "_blank");
+		}
+	</script>
+
+
+</html>
